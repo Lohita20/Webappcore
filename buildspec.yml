@@ -14,7 +14,7 @@ phases:
         #- dotnet test Tests/Tests.csproj
     build:
         commands:
-        - node transform-template.js
+        - node Webappcore/WebAppCore/wwwroot/js/site.js
         - dotnet publish WebAppCore/WebAppCore.csproj -o bin/Release/netcoreapp2.1/publish
         - ls
         ##- cd Api
