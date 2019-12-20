@@ -10,7 +10,7 @@ phases:
     build:
         commands:
         - node transform-template.js
-        - dotnet publish Api/Api.csproj -o bin/Release/netcoreapp2.1/publish
+        - dotnet publish WebAppCore/WebAppCore.csproj -o bin/Release/netcoreapp2.1/publish
         - ls
         ##- cd Api
         ##- aws cloudformation package --template-file serverless.template --s3-bucket $ArtifactBucket --output-template-file outputSamTemplate.yml
