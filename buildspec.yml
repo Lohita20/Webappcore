@@ -3,20 +3,21 @@ phases:
 
     install:
       runtime-versions:
-        nodejs: 8
+        dotnet: 3.0
     
     install:
       commands:
-        - curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-        - sudo apt-get install -y nodejs
+        #- curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+        #- sudo apt-get install -y nodejs
     #pre_build:
      #   commands:
         #- dotnet test Tests/Tests.csproj
     build:
         commands:
+        dotnet Webappcore
         #- node Webappcore/WebAppCore/wwwroot/js/site.js
-        - dotnet publish WebAppCore/WebAppCore.csproj -o bin/Release/netcoreapp2.1/publish
-        - ls
+        #- dotnet publish WebAppCore/WebAppCore.csproj -o bin/Release/netcoreapp2.1/publish
+        #- ls
         ##- cd Api
         ##- aws cloudformation package --template-file serverless.template --s3-bucket $ArtifactBucket --output-template-file outputSamTemplate.yml
         ##- ls
