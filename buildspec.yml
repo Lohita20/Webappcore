@@ -1,5 +1,10 @@
 version: 0.2
 phases:
+
+    install:
+      runtime-versions:
+        docker: 18
+    
     install:
       commands:
         - curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
