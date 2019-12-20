@@ -26,5 +26,6 @@ artifacts:
   #  - outputSamTemplate.yml
    # - ../../template-params.json
      - public/* 
+     - buildspec.yml
   #discard-paths: yes
   #base-directory: WebAppCore
