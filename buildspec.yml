@@ -4,9 +4,9 @@ phases:
       commands:
         - curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
         - sudo apt-get install -y nodejs
-    pre_build:
-        commands:
-        - dotnet test Tests/Tests.csproj
+    #pre_build:
+     #   commands:
+        #- dotnet test Tests/Tests.csproj
     build:
         commands:
         - node transform-template.js
