@@ -21,4 +21,4 @@ artifacts:
     - outputSamTemplate.yml
     - ../../template-params.json
   discard-paths: yes
-  base-directory: src
+  base-directory: WebAppCore
